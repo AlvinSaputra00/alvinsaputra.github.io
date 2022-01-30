@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<div class="w3-container">
+  <img src="banner.jpg" style="width:100%" width=350 height=250>
+</div>
+
+<div class="w3-bar w3-black">
+  <button class="w3-bar-item w3-button" onclick="openCity('Bandung')">Bandung</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Lembang')">Lembang</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Cimahi')">Cimahi</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Garut')">Garut</button>
+  <button class="w3-bar-item w3-button" onclick="openCity('Biodata')">Biodata</button>
+</div>
+
+<div id="Bandung" class="w3-container city">
+  <h2>Bandung</h2>
+	<div class="w3-container w3-left w3-animate-fading">
+    <img src="bandung.jpg" alt="Toji" style="width:100%" width=350 height=250>
+	</div>
+</div>
+
+<div id="Lembang" class="w3-container city" style="display:none">
+  <h2>Lembang</h2>
+	<div class="w3-container w3-left w3-animate-bottom">
+    <img src="lembang.jpg" alt="Toji" style="width:100%" width=350 height=250>
+	</div>
+</div>
+
+<div id="Cimahi" class="w3-container city" style="display:none">
+  <h2>Cimahi</h2>
+	<div class="w3-container w3-left w3-animate-top"> 
+    <img src="cimahi.jpg" alt="Toji" style="width:100%" width=350 height=250>
+    </div>
+</div>
+
+<div id="Garut" class="w3-container city" style="display:none">
+  <h2>Garut</h2>
+	<div class="w3-container w3-left w3-animate-zoom">
+    <img src="garut.jpeg" alt="Toji" style="width:100%" width=350 height=250>
+    </div>
+</div>
+
+<div id="Biodata" class="w3-container city" style="display:none">
+  <h2>Biodata</h2>
+<table>
+<tr><td>Nim<td>: 10121063
+<tr><td>Nama<td>: Alvin Saputra
+<tr><td>Kelas<td>: IF-2
+</td>
+	<div class="w3-container w3-left w3-animate-zoom">
+    <img src="alvin.jpeg" alt="Toji" style="width:100%" width=350 height=250>
+  </div>
+</div>
+
+<script>
+function openCity(cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  document.getElementById(cityName).style.display = "block";  
+}
+</script>
+
+</body>
+</html>
